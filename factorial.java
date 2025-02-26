@@ -17,9 +17,7 @@ public class Factorial {
         return num;
     }
     
-    public static void main(String[] args) {
-        long num = getNumber();
-        
+    public static void showFac(long num) {
         if (num < 0) {
             System.out.println("El factorial no está definido para números negativos");
         } else {
@@ -27,5 +25,10 @@ public class Factorial {
             System.out.println("El factorial de " + num + " es " + fac);
         }
     }
+    
+    public static void main(String[] args) {
+        long num = getNumber();
+        showFac(num);
+    }    
     
 }
